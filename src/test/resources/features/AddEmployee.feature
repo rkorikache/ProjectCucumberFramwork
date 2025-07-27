@@ -11,19 +11,19 @@ Feature: Add Employee
     When user clicks on PIM option
     When user clicks on add employee option
 
-  @addEmployee @withoutID
+  @addEmployee @withoutID @all
   Scenario: Add an employee without providing employee ID
     And user enters "lana" and "ms" and "smith"
     And user clicks on save button
     Then employee is added successfully
 
-  @addEmployee @withID
+  @addEmployee @withID @all
   Scenario: Add an employee with a unique employee ID
     And user enters "lana" and "ms" and "smith" and "1"
     And user clicks on save button
     Then employee is added successfully
 
-  @addEmployee @errorValidation
+  @addEmployee @errorValidation @all
   Scenario: Display error messages when required fields are missing
     When user leaves the firstname and lastname fields empty
     And user clicks on save button

@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         //when we have to execute, we set the value to false
         dryRun = false,
         //tags = "@login @validation"
-        tags = "@addEmployee"
+        tags = "@all"
         //pretty plugin prints all the steps in console
        // plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json",
                // "rerun:target/failed.txt"}
